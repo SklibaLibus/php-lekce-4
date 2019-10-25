@@ -28,8 +28,22 @@
             <td>1.1.2000</td>
             <td>0 Kč</td>
         </tr>
+<?php
+$objednavky = @fopen("objednavky.csv", "r");
+if ($objednavky === false) {
+    echo "Soubor se nepodařilo otevřít!";
+} else {
+    while (($line = fgets($objednavky, 1000)) !== false){
+        $hodnoty = explode(";", $line);
+        echo "<tr><td>" . $hodnoty[0] . "</td>";
+        echo "<td>" . $hodnoty[3] . "</td>";
+        echo "<td>" . $hodnoty[2] . "</td>";
+        echo "<td>" . $hodnoty[1] . "</td></tr>";
+        }
+        fclose($objednavky);
+}
+?>
     </table>
 </div>
 </body>
 </html>
-
