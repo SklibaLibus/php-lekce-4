@@ -10,3 +10,11 @@ function maximum($cislo1, $cislo2){
     else {return $cislo1;}
      echo "<br>";
 }
+
+$maximum = maximum(56, 875);
+
+if ($maximum === false) {
+    echo "Chyba.";
+} else {
+    echo $maximum;
+}

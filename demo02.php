@@ -19,10 +19,11 @@ function vypisPozdrav($denniDoba, $osloveni = "člověku") {
 
 function vypocet($a, $b, $c) {
     echo $a + $b + $c;
+    echo "<br>";
 }
 
 vypocet(5, 6, 8);
 
-$denniDoba = 'ráno';
-vypisPozdrav($denniDoba, 'Karle'); // to, co je uvedeno tady má přednost před tím, co je uvedeno v těle fce
+$denniDoba = "ráno";
+vypisPozdrav($denniDoba, "Karle"); // to, co je uvedeno tady má přednost před tím, co je uvedeno v těle fce
 // vypíše: Dobré ráno, Karle!

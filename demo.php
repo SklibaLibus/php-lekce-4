@@ -19,6 +19,7 @@ if ($soubor1 === false) {
 } else {
     while (($line = fgets($soubor1, 1000)) !== false){
         echo $line;
+        echo "<br>";
     }
     fclose($soubor1);
 }

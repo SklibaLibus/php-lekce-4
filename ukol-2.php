@@ -38,7 +38,7 @@ if ($objednavky === false) {
         echo "<tr><td>" . $hodnoty[0] . "</td>";
         echo "<td>" . $hodnoty[3] . "</td>";
         echo "<td>" . $hodnoty[2] . "</td>";
-        echo "<td>" . $hodnoty[1] . "</td></tr>";
+        echo "<td>" . $hodnoty[1] . " Kč" . "</td></tr>";
         }
         fclose($objednavky);
 }
