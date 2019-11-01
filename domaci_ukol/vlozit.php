@@ -25,8 +25,7 @@ $vzkaz = $_POST["vzkaz"];
         } else {
             fwrite($udaje_z_webu, ("<b>$jmeno</b>") . "<br>", 500);
             fwrite($udaje_z_webu, $vzkaz,50000);
-            $oddelovac = "<hr>";
-            fwrite($oddelovac);
+            fwrite($udaje_z_webu, "<hr>");
             fclose($udaje_z_webu);
             echo "Vzkaz byl uložen.<br>";
             echo "<br><a href=\"navstevni_kniha.php\">Vrátit se zpět na návštěvní knihu.</a>";

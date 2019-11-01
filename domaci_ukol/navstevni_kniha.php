@@ -54,7 +54,7 @@
     $udaje_z_webu = @fopen("prispevky.txt", "r");
     if (file_exists("prispevky.txt")) {
         $radek = fgets($udaje_z_webu);
-        echo seradPrispevky($udaje_z_webu, "<hr>");
+        echo seradPrispevky($radek, "<hr>");
         fclose($udaje_z_webu);
     }
     else {
